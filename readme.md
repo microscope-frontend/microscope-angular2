@@ -1,5 +1,5 @@
-microscope-angular
-==================
+microscope-angular 2
+====================
 
 AngularJS 2 (Typescript / Browserify) starter kit.
 
