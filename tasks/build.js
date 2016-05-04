@@ -11,7 +11,7 @@ gulp.task('build', function (cb) {
     runSequence('clean', 'assets', 'templates', 'browserify', cb);
 });
 
-gulp.task('browserify', function (cb) {
+gulp.task('browserify', function () {
 	return browserify()
 		.add('./src/main.ts')
 		.plugin(tsify)
