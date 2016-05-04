@@ -6,6 +6,4 @@ import {Component} from 'angular2/core';
 		<h1>Welcome</h1>	
 	`
 })
-export class Welcome {
-
-}
+export class Welcome {}

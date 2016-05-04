@@ -10,7 +10,7 @@ import {Component} from 'angular2/core';
 					AngularJS 2 (Typescript / browserify) starter kit
 				</p>
 				<p>
-					<a href="https://github.com/bhtz/microscope-angular.git" class="btn btn-danger btn-lg">
+					<a href="https://github.com/microscope-frontend/microscope-angular2" class="btn btn-danger btn-lg">
 						Show Github
 					</a>
 				</p>
@@ -18,6 +18,4 @@ import {Component} from 'angular2/core';
 		</div>
 	`
 })
-export class Home {
-
-}
+export class Home {}
