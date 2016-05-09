@@ -18,7 +18,7 @@ gulp.task('release', function (cb) {
     runSequence('clean', 'assets', 'templates', 'browserify:release', cb);
 });
 
-gulp.task('browserify', function (cb) {
+gulp.task('browserify', function () {
 	return browserify()
 		.add('./src/main.ts')
 		.plugin(tsify)
@@ -27,7 +27,6 @@ gulp.task('browserify', function (cb) {
 		.pipe(buffer())
 		.pipe(gulp.dest('./www'));
 });
-
 
 gulp.task('browserify:release', function (cb) {
 	return browserify()
