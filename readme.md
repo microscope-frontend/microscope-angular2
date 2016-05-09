@@ -94,5 +94,6 @@ Commands
 Roadmap
 =======
 
+* babelify <=> gulp release bug
 * Welcome form component
 * CI / CD
