@@ -10,12 +10,12 @@ var runSequence = require('run-sequence');
 
 // build project
 gulp.task('build', function (cb) {
-    runSequence('clean', 'assets', 'templates', 'browserify', cb);
+    runSequence('clean', 'assets', 'templates', 'sass', 'browserify', cb);
 });
 
 // release project
 gulp.task('release', function (cb) {
-    runSequence('clean', 'assets', 'templates', 'browserify:release', cb);
+    runSequence('clean', 'assets', 'templates', 'sass', 'browserify:release', cb);
 });
 
 gulp.task('browserify', function () {
@@ -38,13 +38,6 @@ gulp.task('browserify:release', function (cb) {
 		.pipe(buffer())
         .pipe(uglify({mangle: false}).on('error', gutil.log))
 		.pipe(gulp.dest('./www'));
-});
-
-// watch files and run appropriate tasks
-gulp.task('watch', function () {
-    gulp.watch(['./assets/**'], ['assets']);
-    gulp.watch(['./src/**/*.ts'], ['browserify']);
-    gulp.watch(['./src/**/*.html'], ['templates']);
 });
 
 // assets tasks
