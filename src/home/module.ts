@@ -6,11 +6,10 @@ import {RouterModule} from "@angular/router";
 
 import { HomeComponent } from './components/home';
 import { WelcomeComponent } from './components/welcome';
-import { homeRoutes } from './router';
 
 @NgModule({
     declarations: [HomeComponent, WelcomeComponent],
-    imports     : [BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(homeRoutes)],
+    imports     : [BrowserModule, FormsModule, HttpModule],
 })
 export class HomeModule {
 }
