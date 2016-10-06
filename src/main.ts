@@ -16,4 +16,6 @@ import { AppModule } from './module';
 //enableProdMode();
 
 platformBrowserDynamic()
-    .bootstrapModule(AppModule);
+    .bootstrapModule(AppModule)
+    .then(success => console.log(`Bootstrap success`))
+    .catch(error => console.log(error));
