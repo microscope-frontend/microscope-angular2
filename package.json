@@ -5,10 +5,11 @@
   "scripts": {
     "start": "http-server ./www -s",
     "test": "gulp lint",
-    "build": "browserify src/main.ts -p [ tsify --noImplicitAny ] > www/bundle.js",
+    "build": "gulp build",
+    "release": "gulp release",
+    "lint": "gulp lint",
+    "serve": "gulp serve",
     "postinstall": "typings install",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
     "typings": "typings"
   },
   "author": "Benjamin Heintz",

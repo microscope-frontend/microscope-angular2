@@ -19,7 +19,9 @@ gulp.task('release', function (cb) {
 });
 
 gulp.task('browserify', function () {
-	return browserify('./src/main.ts')
+	return browserify('./src/main.ts', {
+		debug: true
+	})
 		.plugin(tsify)
 		.bundle()
 		.pipe(source('bundle.js'))
