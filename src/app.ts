@@ -1,11 +1,7 @@
-import {Component} from 'angular2/core';
-import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
-import {Home} from './components/home';
-import {Welcome} from './components/welcome';
+import {Component} from '@angular/core';
 
 @Component({
 	selector: 'app',
-	directives: [ROUTER_DIRECTIVES],
 	template: `
 		<nav class="navbar navbar-default" role="navigation">
 			<div class="container">
@@ -16,7 +12,7 @@ import {Welcome} from './components/welcome';
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" [routerLink]="['Home']">
+					<a class="navbar-brand" [routerLink]="['']">
 						<i class="fa fa-home"></i> Home
 					</a>
 				</div>
@@ -34,8 +30,4 @@ import {Welcome} from './components/welcome';
 		</div>
 	`
 })
-@RouteConfig([
-	{ path: '/', component: Home, name: 'Home' },
-	{ path: '/Welcome', component: Welcome, name: 'Welcome' }
-])
-export class App {}
+export class AppComponent {}

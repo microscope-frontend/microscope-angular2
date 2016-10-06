@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 
 @Component({
 	selector: 'home',
@@ -18,4 +18,4 @@ import {Component} from 'angular2/core';
 		</div>
 	`
 })
-export class Home {}
+export class HomeComponent {}

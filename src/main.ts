@@ -1,15 +1,16 @@
-///<reference path="../node_modules/angular2/typings/browser.d.ts"/>
+/// <reference path="../typings\index.d.ts" />
 
-import 'es6-shim';
-import 'reflect-metadata';
-import 'rxjs';
+// Polyfills
+import 'core-js/es6';
+import 'core-js/es7/reflect';
 import 'zone.js/dist/zone';
 
-import {enableProdMode} from 'angular2/core';
-import {bootstrap} from 'angular2/platform/browser';
-import {ROUTER_PROVIDERS} from 'angular2/router';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { enableProdMode } from '@angular/core';
 
-import {App} from './app.ts';
+import { AppModule } from './module';
 
-enableProdMode();
-bootstrap(App, [ROUTER_PROVIDERS]);
+//enableProdMode();
+
+platformBrowserDynamic()
+    .bootstrapModule(AppModule);

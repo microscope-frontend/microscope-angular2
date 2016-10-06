@@ -19,8 +19,7 @@ gulp.task('release', function (cb) {
 });
 
 gulp.task('browserify', function () {
-	return browserify()
-		.add('./src/main.ts')
+	return browserify('./src/main.ts')
 		.plugin(tsify)
 		.bundle()
 		.pipe(source('bundle.js'))
