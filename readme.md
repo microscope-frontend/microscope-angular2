@@ -38,11 +38,11 @@ Using homebrew:
 Installation
 ------------
 
-#### install global gulp (sudo on linux/OSX) :
+#### install global gulp:
 
 	npm install gulp
 
-#### install local dependencies (sudo on linux/OSX) :
+#### install local dependencies:
 
 	npm install
 
@@ -53,13 +53,15 @@ Commands
 
 	npm start
 
+* run http-server and expose www folder.
+
 #### test (run gulp test):
 
 	npm test
 
 #### build:
 
-	gulp build
+	npm run build
 
 * clean www directory.
 * copy assets & templates in www directory.
@@ -67,7 +69,7 @@ Commands
 
 #### release:
 
-	gulp release
+	npm run release
 	
 * validate source code (jsHint).
 * clean www directory.
@@ -77,23 +79,16 @@ Commands
 
 #### test:
 
-	gulp test
+	npm run lint
 	
 * validate source code (tslint).
 
 #### serve:
 
-	gulp serve
+	npm run serve
 	
 * clean www directory.
 * copy assets & templates in www directory.
 * compile scripts source files to bundle.
 * run local server with generated 'www/' directory as root.
 * Watch for changes in source files (scripts & assets).
-
-Roadmap
-=======
-
-* babelify <=> gulp release bug
-* Welcome form component
-* CI / CD
