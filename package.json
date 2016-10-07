@@ -4,12 +4,11 @@
   "description": "AngularJS 2 (Typescript / browserify) starter kit",
   "scripts": {
     "start": "http-server ./www -s",
-    "test": "gulp lint",
+    "test": "protractor ./tests/config.js",
     "build": "gulp build",
     "release": "gulp release",
     "lint": "gulp lint",
     "serve": "gulp serve",
-    "postinstall": "typings install",
     "typings": "typings"
   },
   "author": "Benjamin Heintz",
@@ -36,6 +35,8 @@
   },
   "devDependencies": {
     "browserify": "^13.0.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-connect": "^4.0.0",
