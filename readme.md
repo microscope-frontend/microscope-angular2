@@ -12,7 +12,6 @@ Requirements
 
 * [node 6.9.X LTS](https://nodejs.org/en/)
 * [NPM](https://www.npmjs.com/)
-* [CNTLM](http://cntlm.sourceforge.net/)
 
 Tools
 -----
