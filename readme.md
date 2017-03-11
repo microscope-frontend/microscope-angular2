@@ -75,7 +75,7 @@ Commands
 
 **Run unit tests**
 
-        npm run tests
+        npm run test
 
 **Run end to end tests** (selenium/protractor)
 
