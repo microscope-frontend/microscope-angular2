@@ -100,4 +100,4 @@ Commands
 
         npm run ng generate pipe ./<modulename>/pipes/<name>
 
-        npm run ng generate services ./<modulename>/services/<name>
+        npm run ng generate service ./<modulename>/services/<name>
