@@ -6,6 +6,6 @@ export class StarterPage {
   }
 
   getParagraphText() {
-    return element(by.css('.lead')).getText();
+      return element(by.css('app-root h2')).getText();
   }
 }
